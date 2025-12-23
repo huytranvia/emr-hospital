@@ -1,16 +1,10 @@
-// patients.js
-
-// Thêm bệnh nhân mà không thay đổi mảng gốc
 function addPatient(patients, newPatient) {
   return [...patients, newPatient];
 }
-
-// Cập nhật bệnh nhân theo id
 const updatePatient = (patients, id, updates) => {
   return patients.map(p => p.id === id ? { ...p, ...updates } : p);
 };
 
-// ===== TEST =====
 let patients = [
   { id: '1', name: 'Nguyễn Văn A', age: 30 },
   { id: '2', name: 'Trần Thị B', age: 25 },
